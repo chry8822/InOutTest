@@ -1,0 +1,291 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+/*      snow       */
+
+@keyframes fall {
+  to {
+    transform: translateY(95vh);
+  }
+}
+
+@keyframes title {
+  10% {
+    color: #fff;
+    border-color: #fff;
+  }
+  30% {
+    color: yellow;
+    border-color: yellow;
+  }
+  50% {
+    color: red;
+    border-color: red;
+  }
+  80% {
+    color: royalblue;
+    border-color: royalblue;
+  }
+  
+}
+
+.fa-snowflake {
+  animation: fall 5s linear forwards;
+  color: #fff;
+  position: absolute;
+}
+
+
+
+/*     index.html     */
+
+i:hover {
+  cursor: pointer;
+  transform: scale(3);
+}
+
+.landing {
+  font-family: 'Noto Sans KR';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:#0D6EFD ;
+  height: 65vh;
+  /* min-width: 500px; */
+  color: #fff;
+}
+
+.landing h1 , .title{
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 20px;
+  animation: title 3s linear infinite ;
+}
+
+.landing .landingMsg {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.testStart {
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+
+.testStart:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(./img/눈밭.png)no-repeat center/cover;
+  /* background-position: 0 -400px; */
+  height: 35vh;
+  font-size: 16px;
+  color: #FFF;
+  text-align: center;
+  
+}
+
+.startshare {
+  color: rgb(60, 30, 50);
+  background-color: #f9e000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+
+
+/*    test.html    */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color:#0D6EFD ;
+  height: 10vh;
+  min-height: 60px;
+  color: #fff;
+}
+
+.header h1 {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 40px;
+  
+/*  선택지 모듈 */
+
+}
+.question h2 {  
+  font-weight: 700;
+}
+
+  
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #e9e9e9;
+  margin: 40px 0 40px 0;
+  /* padding-bottom: 53px;
+  padding-top: 43px; */
+}
+.question.last {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 40px 0 20px 0;
+}
+
+.question p {
+  width: 80%;
+  text-align: center;
+}
+
+/* result.css */
+
+.resultBtn {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background-color: #f9e000;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  transition: all 0.1s;
+  border: none;
+}
+.resultBtn:hover {
+  color: #0D6EFD;
+  transform: scale(1.2);;
+  transition: all 0.1s;
+}
+
+.footer.result {
+  color: black;
+}
+
+.result img {
+  max-width: 500px;
+  width: 80%;
+}
+
+.kakao-ad {
+  width: 320px;
+  height: 100px;
+}
+
+/*  result one */
+
+.resultOne {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oneSubTitle {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.oneText {
+  font-size: 20px;
+  text-align: center;
+  width: 800px;
+  margin-bottom: 30px;
+}
+.returnBtn {
+  text-decoration: none;
+  list-style: none;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 2px;
+  background-color:#0D6EFD;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.returnBtn:hover {
+  color: red;
+}
+
+@media screen and (max-width:380px)  {
+  .header {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .header .title {
+    font-size: 30px;
+  }
+  .result .oneSubTitle {
+    font-size: 30px;
+  }
+  .oneText {
+    font-size: 14px;
+    width: 280px;
+  }
+  .returnBtn {
+    font-size: 20px;
+  }
+  .footer.result {
+    height: 300px;
+  }
+
+  .landing {
+    height: 500px;
+  }
+
+  .footer.start {
+    height: 300px;
+  }
+
+  .question h2{
+    font-size: 20px;
+    width: 280px;
+    text-align: center;
+  }
+
+  .resultBtn {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .footer.test {
+    padding-top: 0;
+    height: 500px;
+  }
+
+}
