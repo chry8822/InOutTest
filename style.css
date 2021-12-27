@@ -30,6 +30,13 @@
   }
   
 }
+@keyframes btn {
+  50% {
+    
+    box-shadow: 0px 0px 30px #0d6efd ;
+  }
+
+}
 
 .fa-snowflake {
   animation: fall 5s linear forwards;
@@ -41,6 +48,18 @@
 
 /*     index.html     */
 
+#kakao-link-btn {
+  margin: 5px 0;
+}
+#kakao-link-btn img {
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s;
+}
+#kakao-link-btn img:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s;
+}
 i:hover {
   cursor: pointer;
   transform: scale(3);
@@ -53,7 +72,8 @@ i:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color:#0D6EFD ;
+  background: rgb(13,110,253);
+  background: linear-gradient(180deg, rgba(13,110,253,1) 0%, rgba(255,255,255,0.26094187675070024) 95%);
   height: 65vh;
   /* min-width: 500px; */
   color: #fff;
@@ -84,6 +104,7 @@ i:hover {
   border: 2px solid #fff;
   border-radius: 5px;
   transition: all 0.2s;
+  animation: btn 1s linear infinite;
 }
 
 .testStart:hover {
@@ -111,8 +132,8 @@ i:hover {
   background-color: #f9e000;
   padding: 10px 20px;
   border-radius: 10px;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 30px;
 }
 
@@ -139,9 +160,11 @@ i:hover {
   font-weight: 700;
   font-size: 40px;
   
+  
+}
 /*  선택지 모듈 */
 
-}
+
 .question h2 {  
   font-weight: 700;
 }
@@ -251,7 +274,8 @@ i:hover {
     font-size: 30px;
   }
   .result .oneSubTitle {
-    font-size: 30px;
+    font-size: 25px;
+    margin: 20px 0;
   }
   .oneText {
     font-size: 14px;
@@ -285,7 +309,7 @@ i:hover {
 
   .footer.test {
     padding-top: 0;
-    height: 500px;
+    height: 550px;
   }
 
 }

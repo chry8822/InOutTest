@@ -5,14 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <meta property="og:image" content="https://kooolzzin.shop/img/%ED%95%B5%EC%9D%B8%EC%8B%B8.png">
+  <meta property="og:title" content="아싸 인싸 테스트">
+  <meta property="og:description" content="간단한 테스트로 인싸력과 아싸력을 얻어보세요 화이팅!"> 
+  <title>인사 아싸 테스트</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7195655423714890"
+     crossorigin="anonymous"></script>
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- <script src="https://kit.fontawesome.com/c46829a8f8.js" crossorigin="anonymous"></script> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
-   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">  
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -33,20 +41,35 @@
     <p class="startshare">
       친구들도 테스트 시키기
     </p>
-    <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
-    
-
-    <!-- 광고 -->
-   <div class="kakao-ad">
-      <ins class="kakao_ad_area" style="display:none;" 
-      data-ad-unit    = "DAN-I98AIUMJL5l8mtW9" 
-      data-ad-width   = "320" 
-      data-ad-height  = "100"></ins> 
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <div class="addthis_inline_share_toolbox">
     </div>
-  </footer>  
+    <a id="kakao-link-btn" href="javascript:sendLink()">
+      <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+    </a>
+    <script type="text/javascript">
+      Kakao.init('280daaf56db150c1f0f36517a60fabf9');
+      function sendLink() { // 카카오톡 공유하기
+    Kakao.Link.sendDefault({
+      objectType: 'text',
+      text: '인싸 아싸 테스트 하기!.',
+      link: {
+        mobileWebUrl: 'https://kooolzzin.shop/index.html',
+        webUrl: 'https://kooolzzin.shop/index.html',
+      },
+    })
+  }
+    </script>
+    </script>
+    <!-- 광고 -->
+    <div class="kakao-ad">
+      <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-I98AIUMJL5l8mtW9" data-ad-width="320"
+        data-ad-height="100"></ins>
+    </div>
+  </footer>
   <script src="./script.js"></script>
   <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
- <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6194aed15d282b4b"></script>
-
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6194aed15d282b4b"></script>
 </body>
 </html>
