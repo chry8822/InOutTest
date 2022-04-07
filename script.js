@@ -17,6 +17,13 @@ function makeSnow (){
 
     snowEl.appendChild(snow);
 
+    function removeSnow(e) {
+        if(e.target) {
+            snow.style.opacity = "0"
+        }
+    }
+    snow.addEventListener("click",removeSnow)
+
     setTimeout(() => {
         snow.remove();
     }, 4500 );
